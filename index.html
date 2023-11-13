@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentcolor">
+            <path d="M0 0h24v24H0V0z" fill="none"></path>
+            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+         </svg>
+      </button>
+    <header class="navigation_menu">
+        <div class="header_menu">
+            <div class="first_menu">
+                <div class="container">
+                    <div class="contact_menu">
+                        <div class="first_half">
+                            <ul class="location">
+                                <li>
+                                    <a href="#" class="anchor">
+                                        <img src="images/icons/icon-mail-blue.png" alt="mail_icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="" style="text-decoration: none; color: white; font-family: 'Montserrat-Regular'; font-size: 13px;"> 2835 vidor Ave, San
+                                 Antorio, TX 78216 </a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#" class="anchor">
+                                        <img src="images/icons/icon-phone.png" alt="phone_icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="" style="text-decoration: none; color: white; font-family: 'Montserrat-Regular'; font-size: 13px;"> Phone +1 (100) 380-790
+                                 </a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="second_half">
+                            <div>
+                                <ul class="follow_us">
+                                    <li>
+                                        <p style="font-family: 'Montserrat-Regular'; font-size: 13px;">Follow us:</p>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor"><img src="images/icons/icon-fb.png" alt="fb_icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor"><img src="images/icons/icon-twitter-small.png" alt="twitter_icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor"><img src="images/icons/icon-linkedin.png" alt="linked_in_icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor"><img src="images/icons/icon-insta.png" alt="insta_icon"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <select name="language" id="" class="languages">
+                              <option value="English">English</option>
+                              <option value="Hindi">Hindi</option>
+                              <option value="Spanish">Gujarati</option>
+                           </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second_menu">
+                <div class="container">
+                    <div class="menu">
+                        <div class="menu_first_half">
+                            <ul class="header_list_logo">
+                                <li>
+                                    <a href="#" class="anchor"><img src="images/icons/icon-$-small.png" alt="logo"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="anchor_text">Investor</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_second_half">
+                            <div class="list">
+                                <ul class="header_list">
+                                    <li class="active">
+                                        <a href="#" class="anchor">home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor">pages</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor">blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor">portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor">shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor">features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor">element</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cart">
+                                <a href="#"><img src="images/icons/icon-cart.png" alt="cart_icon"></a>
+                            </div>
+                            <div class="search">
+                                <a href="#"><img src="images/icons/icon-search.png" alt="search_icon"></a>
+                            </div>
+                            <!-- mobile  menu start -->
+                            <!-- Overlay content -->
+                            <div id="myNav" class="overlay">
+                                <!-- Button to close the overlay navigation -->
+                                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                                <a href="javascript:void(0)" onclick="close_menu()" class="closebtn" id="close_menu">
+                                    <div class="strip burger-strip">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </a>
+                                <!-- Overlay content -->
+                                <div class="overlay-content">
+                                    <a href="#">HOME</a>
+                                    <a href="#">PAGES</a>
+                                    <a href="#">BLOG</a>
+                                    <a href="#">PORTFOLIO</a>
+                                    <a href="#">SHOP</a>
+                                    <a href="#">FEATURES</a>
+                                    <a href="#">ELEMENTS</a>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0)" class="openbtn" onclick="open_menu()" id="openbtn">
+                                <div class="strip burger-strip">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+
+    <div class="main_section">
+        <div class="image_section">
+            <div class="one-time">
+                <div>
+                    <img src="images/slider-1.jpg" style="width:100%">
+                </div>
+                <div>
+                    <img src="images/slider-1.jpg" style="width:100%">
+                </div>
+                <div>
+                    <img src="images/slider-1.jpg" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="f1">
+                <div>
+                    <h2>fully independent</h2>
+                </div>
+                <div>
+                    <p>We have years of experience helping clients find the best financing while meeting their financial goals.
+                    </p>
+                </div>
+                <div class="f1-btn">
+                    <a href="#" class="btncolor">Request a call back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="second_section">
+        <div class="container">
+            <div class="analysis_flex">
+
+
+                <h2 class="common-header">what we do best</h2>
+
+                <div class="analysis_card">
+                    <div class="flexrow">
+                        <div class="card1">
+                            <div class="card1image">
+                                <img src="images/icons/icon-graph-home2.png" alt="">
+                            </div>
+                            <div class="card1info">
+                                <h4>project finance</h4>
+                                <p>We aim at developing and implementing customized and sustainable project financing solutions together with our clients. Derivative instruments to hedge ...</p>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="card1image">
+                                <img src="images/icons/icon-bank-home2.png" alt="">
+                            </div>
+                            <div class="card1info">
+                                <h4>investment loan</h4>
+                                <p>Loan business play a vital role in keeping your business competitive. In many cases, such measures and investments require capital and funding has to be...</p>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="card1image">
+                                <img src="images/icons/icon-building-home2.png" alt="">
+                            </div>
+                            <div class="card1info">
+                                <h4>real estate &amp; planning</h4>
+                                <p>Finance focuses its services on a wide variety of financing solutions as well as for real estate project development and real estate projects. We are specialist for real estate...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexrow">
+                        <div class="card1">
+                            <div class="card1image">
+                                <img src="images/icons/icon-graph-home2.png" alt="">
+                            </div>
+                            <div class="card1info">
+                                <h4>project finance</h4>
+                                <p>We aim at developing and implementing customized and sustainable project financing solutions together with our clients. Derivative instruments to hedge ...</p>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="card1image">
+                                <img src="images/icons/icon-bank-home2.png" alt="">
+                            </div>
+                            <div class="card1info">
+                                <h4>investment loan</h4>
+                                <p>Loan business play a vital role in keeping your business competitive. In many cases, such measures and investments require capital and funding has to be...</p>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="card1image">
+                                <img src="images/icons/icon-building-home2.png" alt="">
+                            </div>
+                            <div class="card1info">
+                                <h4>real estate &amp; planning</h4>
+                                <p>Finance focuses its services on a wide variety of financing solutions as well as for real estate project development and real estate projects. We are specialist for real estate...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="third_section">
+        <div class="container">
+            <div class="details-of-3">
+                <div class="first_part">
+
+                    <p class="title-first">finance group</p>
+                    <div class="subtitle-first">
+                        <h3 style="font-size: 30px; margin: 0;">FOUNDED IN 1988</h3>
+                    </div>
+                    <p>We become one of the best financial services providers. Our team has decades of experience working specifically with affluent individuals. We've devoted our careers to helps clients reach their financial goals.</p>
+                    <a href="#" class="simple-link">read more about us</a>
+
+                </div>
+                <div class="second_part">
+
+                    <div class="secondimage">
+                        <img src="images/forma-1.png" alt="">
+                    </div>
+                    <div class="secondtext">
+                        <h3>7513<span>+</span></h3>
+                    </div>
+                    <p style="margin: 0;">HAPPY CUSTOMERS</p>
+
+                </div>
+                <div class="third_part">
+
+                    <div class="secondimage">
+                        <img src="images/forma-2.png" alt="">
+                    </div>
+                    <div class="secondtext">
+                        <h3>1290<span>+</span></h3>
+                    </div>
+                    <p style="margin: 0;">EXPERT ADVISORS</p>
+
+                </div>
+                <div class="forth_part">
+
+                    <div class="secondimage">
+                        <img src="images/forma-3.png" alt="">
+                    </div>
+                    <div class="secondtext">
+                        <h3>2684<span>+</span></h3>
+                    </div>
+                    <p style="margin: 0;">PROJECT SUCCESS</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="fourth_section">
+        <div class="container">
+            <div class="sec4">
+                <div class="sec4intro">
+                    <h2 class="common-header">BEST SERVICES OFFER</h2>
+
+                    <p class="common-content">Appropriate and sufficient financing for a company is crucially important for its long-term success. We advise you in choosing the appropriate type of financing.</p>
+                </div>
+                <div class="card-service">
+                    <div>
+                        <div class="cards">
+                            <div class="cards-img">
+                                <img src="images/service-1.jpg" alt="">
+                                <div class="cards-img-title">
+                                    <h6>investment loan</h6>
+                                </div>
+                            </div>
+                            <div class="cards-content">
+                                <P>Loan business play a vital role in keeping your business competitive. In many cases, such measures and investments require capital</P>
+                                <a href="#" class="simple-link">read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div>
+                        <div class="cards">
+                            <div class="cards-img">
+                                <img src="images/service-2.jpg" alt="">
+                                <div class="cards-img-title">
+                                    <h6>project finance</h6>
+                                </div>
+                            </div>
+                            <div class="cards-content">
+                                <p>We aim at developing and implementing customized and sustainable project financing solutions together with our clients</p>
+                                <a href="#" class="simple-link">read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div>
+                        <div class="cards">
+                            <div class="cards-img">
+                                <img src="images/service-3.jpg" alt="">
+                                <div class="cards-img-title">
+                                    <h6>real estate planning</h6>
+                                </div>
+                            </div>
+                            <div class="cards-content">
+                                <p>Finance focuses its services on a wide variety of financing solutions as well as for real estate project development and real estate projects. </p>
+                                <a href="#" class="simple-link">read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div>
+                        <div class="cards">
+                            <div class="cards-img">
+                                <img src="images/service-1.jpg" alt="">
+                                <div class="cards-img-title">
+                                    <h6>investment loan</h6>
+                                </div>
+                            </div>
+                            <div class="cards-content">
+                                <P>Loan business play a vital role in keeping your business competitive. In many cases, such measures and investments require capital</P>
+                                <a href="#" class="simple-link">read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div>
+                        <div class="cards">
+                            <div class="cards-img">
+                                <img src="images/service-2.jpg" alt="">
+                                <div class="cards-img-title">
+                                    <h6>project finance</h6>
+                                </div>
+                            </div>
+                            <div class="cards-content">
+                                <p>We aim at developing and implementing customized and sustainable project financing solutions together with our clients</p>
+                                <a href="#" class="simple-link">read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div>
+                        <div class="cards">
+                            <div class="cards-img">
+                                <img src="images/service-3.jpg" alt="">
+                                <div class="cards-img-title">
+                                    <h6>real estate planning</h6>
+                                </div>
+                            </div>
+                            <div class="cards-content">
+                                <p>Finance focuses its services on a wide variety of financing solutions as well as for real estate project development and real estate projects. </p>
+                                <a href="#" class="simple-link">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="call-back-container">
+        <div class="call-back-img">
+            <img src="images/form-img.jpg " alt="">
+        </div>
+        <div class="formdata">
+            <div class="formdata-start">
+                <h2 class="common-header">our commitment to you</h2>
+                <p class="common-content">We're proud to provide cutting-edge expertise in areas including planning, investments, taxes, estate, insurance, income and education. At Financial Solutions, our expertise and experience serve a single purpose: To help you succeed.</p>
+                <div class="forminfo">
+                    <div class="forminfo-des">
+                        <p>partnership</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="forminfo-des-2">
+                        <div class="forminfo-des-2-size percentage-80"></div>
+                    </div>
+                </div>
+                <div class="forminfo">
+                    <div class="forminfo-des">
+                        <div class="left-desc">
+                            <p>full support</p>
+                        </div>
+                        <div class="right-desc">
+                            <p>90%</p>
+                        </div>
+                    </div>
+                    <div class="forminfo-des-2">
+                        <div class="forminfo-des-2-size percentage-90"></div>
+                    </div>
+                </div>
+                <div class="forminfo">
+                    <div class="forminfo-des">
+                        <div class="left-desc">
+                            <p>opportunity</p>
+                        </div>
+                        <div class="right-desc">
+                            <p>70%</p>
+                        </div>
+                    </div>
+                    <div class="forminfo-des-2">
+                        <div class="forminfo-des-2-size percentage-70"></div>
+                    </div>
+                </div>
+                <div class="forminfo">
+                    <div class="forminfo-des">
+                        <div class="left-desc">
+                            <p>revenue &amp; income</p>
+                        </div>
+                        <div class="right-desc">
+                            <p>95%</p>
+                        </div>
+                    </div>
+                    <div class="forminfo-des-2">
+                        <div class="forminfo-des-2-size percentage-95"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="smallsection">
+        <div class="container">
+            <div class="smallsection-fisrt">
+                <img src="images/icons/icon-certi-blue.png" alt="badge">
+                <p class="smallsection-fisrt-info">
+                    professional help in planning your finanical future
+                </p>
+                <a href="#" class="btn-grey">contact us today</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="client-testimonials">
+            <div class="testimonials-intro">
+                <h2 class="common-header">client testimonials</h2>
+
+                <p class="common-content">Appropriate and sufficient financing for a company is crucially important for its long-term success. We advise you in choosing the appropriate type of financing.</p>
+            </div>
+            <div class="test-slider">
+                <div>
+                    <div class="slider_card">
+                        <div class="slider_content">
+                            <div class="slider_desc">
+                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much.
+                                    They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers. </p>
+                            </div>
+                            <div class="slider_title">
+                                <div class="slider_block">
+                                    <div class="slider_img">
+                                        <img src="images/user-1-home2.png" alt="">
+                                    </div>
+                                    <div class="slider_name">
+                                        <h4>sabrina brown</h4>
+                                        <p>Delicates Studio</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icons/icon-stars.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="slider_card">
+                        <div class="slider_content">
+                            <div class="slider_desc">
+                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much.
+                                    They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers. </p>
+                            </div>
+                            <div class="slidertitle">
+                                <div class="slider_block">
+                                    <div class="slider_img">
+                                        <img src="images/user-2-home2.png" alt="">
+                                    </div>
+                                    <div class="slider_name">
+                                        <h4>sabrina brown</h4>
+                                        <p>Delicates Studio</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icons/icon-stars.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="slider_card">
+                        <div class="slider_content">
+                            <div class="slider_desc">
+                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much.
+                                    They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers. </p>
+                            </div>
+                            <div class="slider_title">
+                                <div class="slider_block">
+                                    <div class="slider_img">
+                                        <img src="images/user-1-home2.png" alt="">
+                                    </div>
+                                    <div class="slider_name">
+                                        <h4>sabrina brown</h4>
+                                        <p>Delicates Studio</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icons/icon-stars.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="slider_card">
+                        <div class="slider_content">
+                            <div class="slider_desc">
+                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much.
+                                    They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers. </p>
+                            </div>
+                            <div class="slider_title">
+                                <div class="slider_block">
+                                    <div class="slider_img">
+                                        <img src="images/user-2-home2.png" alt="">
+                                    </div>
+                                    <div class="slider_name">
+                                        <h4>sabrina brown</h4>
+                                        <p>Delicates Studio</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icons/icon-stars.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="slider_card">
+                        <div class="slider_content">
+                            <div class="slider_desc">
+                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much.
+                                    They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers. </p>
+                            </div>
+                            <div class="slider_title">
+                                <div class="slider_block">
+                                    <div class="slider_img">
+                                        <img src="images/user-1-home2.png" alt="">
+                                    </div>
+                                    <div class="slider_name">
+                                        <h4>sabrina brown</h4>
+                                        <p>Delicates Studio</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icons/icon-stars.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="slider_card">
+                        <div class="slider_content">
+                            <div class="slider_desc">
+                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much.
+                                    They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers. </p>
+                            </div>
+                            <div class="slider_title">
+                                <div class="slider_block">
+                                    <div class="slider_img">
+                                        <img src="images/user-2-home2.png" alt="">
+                                    </div>
+                                    <div class="slider_name">
+                                        <h4>sabrina brown</h4>
+                                        <p>Delicates Studio</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icons/icon-stars.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="submiting-form">
+        <div class="container">
+            <div class="submit-form-main">
+                <div class="submit-form-main-desc">
+                    <h2 class="common-header">request a call back</h2>
+                    <p>Talk to us today to find out how we can suggest long and short-term strategies that will help you realize our financial dreams.</p>
+                </div>
+                <form class="form-start">
+                    <select name="best-tt-call" id="">
+                         <option value="best time to call">best time to call</option>
+                         
+                     </select>
+                    <div class="row">
+                        <input type="text" name="name" placeholder="your name*">
+                        <input type="text" name="phone" placeholder="your phone*">
+                    </div>
+                    <input type="submit" value="call me back" class="btncolor">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card2-main-container">
+        <div class="container">
+            <div class="card2_info">
+                <div class="card2_title">
+                    <h2 class="common-header">company news</h2>
+                </div>
+
+            </div>
+            <div class="card2_container">
+                <div>
+                    <div class="main_card">
+                        <div class="main_card_img">
+                            <img src="images/news-1-home2.jpg" alt="">
+                            <div class="main_card_img_tag">
+                                <span class="colortag">events</span>
+                            </div>
+                        </div>
+                        <div class="main_card_content">
+                            <h3>Asia shares fail to bounce with Wall sTREET</h3>
+                            <P>Asian share markets faltered on Wednesday as simmering fears of a Sino-U.S. trade war overshadowed a bounce on Wall Street...</P>
+                            <a href="#" class="colorbtn">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main_card">
+                        <div class="main_card_img">
+                            <img src="images/news-2-home2.jpg" alt="">
+                            <div class="main_card_img_tag">
+                                <span class="colortag">events</span>
+                            </div>
+                        </div>
+                        <div class="main_card_content">
+                            <h3>Dollar slips versus yen as trade tensions outlook</h3>
+                            <P>Asian share markets faltered on Wednesday as simmering fears of a Sino-U.S. trade war overshadowed a bounce on Wall Street...</P>
+                            <a href="#" class="colorbtn">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main_card">
+                        <div class="main_card_img">
+                            <img src="images/news-3-home2.jpg" alt="">
+                            <div class="main_card_img_tag">
+                                <span class="colortag">events</span>
+                            </div>
+                        </div>
+                        <div class="main_card_content">
+                            <h3>Wall Street taking notes on Spotify debut</h3>
+                            <P>Asian share markets faltered on Wednesday as simmering fears of a Sino-U.S. trade war overshadowed a bounce on Wall Street...</P>
+                            <a href="#" class="colorbtn">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main_card">
+                        <div class="main_card_img">
+                            <img src="images/news-1-home2.jpg" alt="">
+                            <div class="main_card_img_tag">
+                                <span class="colortag">events</span>
+                            </div>
+                        </div>
+                        <div class="main_card_content">
+                            <h3>Asia shares fail to bounce with Wall sTREET</h3>
+                            <P>Asian share markets faltered on Wednesday as simmering fears of a Sino-U.S. trade war overshadowed a bounce on Wall Street...</P>
+                            <a href="#" class="colorbtn">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main_card">
+                        <div class="main_card_img">
+                            <img src="images/news-2-home2.jpg" alt="">
+                            <div class="main_card_img_tag">
+                                <span class="colortag">events</span>
+                            </div>
+                        </div>
+                        <div class="main_card_content">
+                            <h3>Dollar slips versus yen as trade tensions outlook</h3>
+                            <P>Asian share markets faltered on Wednesday as simmering fears of a Sino-U.S. trade war overshadowed a bounce on Wall Street...</P>
+                            <a href="#" class="colorbtn">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main_card">
+                        <div class="main_card_img">
+                            <img src="images/news-3-home2.jpg" alt="">
+                            <div class="main_card_img_tag">
+                                <span class="colortag">events</span>
+                            </div>
+                        </div>
+                        <div class="main_card_content">
+                            <h3>Wall Street taking notes on Spotify debut</h3>
+                            <P>Asian share markets faltered on Wednesday as simmering fears of a Sino-U.S. trade war overshadowed a bounce on Wall Street...</P>
+                            <a href="#" class="colorbtn">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer_section">
+
+            <div class="line-2">
+                <div class="container">
+                    <div class="second_line">
+                        <!-- part-1 -->
+                        <div class="part-1">
+                            <div class="logo_line">
+                                <a href="#"><img src="images/icons/icon-$.png" alt="logo"></a>
+                                <h2 class="h2-footer">
+                                    investor
+                                </h2>
+                            </div>
+                            <div class="description_line">
+                                <p class="desc_p">
+                                    we have a wide breadth of experience over 30 years providing finanical services.
+                                </p>
+                            </div>
+                            <div class="map_line">
+                                <a href="#"> <img src="images/icons/icon-location.png" alt="map_icon" height="16px" width="16px"></a>
+                                <p> <a href="#" class="footer_a"> 2835 vidor ave, san antonio </a></p>
+                            </div>
+                            <div class="mail_line">
+                                <a href="#"> <img src="images/icons/icon-mail.png" alt="mail_icon" height="16px" width="16px"></a>
+                                <p>
+                                    <a href="#" class="footer_a"> support@finance.com</a>
+                                </p>
+                            </div>
+                            <div class="phone_line">
+                                <a href="#"> <img src="images/icons/icon-phone.png" alt="phone_icon" height="16px" width="16px"></a>
+                                <p>
+                                    <a href="#" class="footer_a"> +1 (100)380-790 / 6:30 AM - 6:30 PM</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- part-2 -->
+                        <div class="part-2">
+                            <div class="heading_line">
+                                <h4 style=" 
+                              font-family: 'Montserrat-Light';
+                              ">
+                                    recent tweets
+                                </h4>
+                            </div>
+                            <div class="first_tweet">
+                                <div class="footer_img_line">
+                                    <img src="images/tweet.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p class="tweet_p">
+                                        life is a story, make yours the best seller
+                                    </p>
+                                    <p class="tweet_p" style="color: gray; font-family: 'Montserrat-Light'; margin-top: 3%;">
+                                        15 june 2018
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="second_tweet">
+                                <div class="footer_img_line">
+                                    <img src="images/tweet.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p class="tweet_p">
+                                        life is a story, make yours the best seller
+                                    </p>
+                                    <p class="tweet_p" style="color: gray; font-family: 'Montserrat-Light'; margin-top: 3%;">
+                                        15 june 2018
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- part-3 -->
+                        <div class="part-3">
+                            <div class="heading_line">
+                                <h4 style=" 
+                              font-family: 'Montserrat-Light';
+                              ">
+                                    popular tags
+                                </h4>
+                            </div>
+                            <div class="tags_part">
+                                <a href="#" class="tags">estate </a>
+                                <a href="#" class="tags">education </a>
+                                <a href="#" class="tags">taxes </a>
+                                <a href="#" class="tags">loan </a>
+                                <a href="#" class="tags">grow </a>
+                                <a href="#" class="tags">insurance</a>
+                                <a href="#" class="tags">income </a>
+                                <a href="#" class="tags">plan</a>
+                                <a href="#" class="tags">consulting</a>
+                            </div>
+                        </div>
+                        <!-- part-4 -->
+                        <div class="part-4">
+                            <div class="heading_line">
+                                <h4 style=" 
+                              font-family: 'Montserrat-Light';
+                              ">
+                                    photostream
+                                </h4>
+                                <div class="photostream">
+                                    <img src="images/mini-img-1.png" alt="" height="100px" width="100px" style="object-fit: cover;">
+                                    <img src="images/mini-img-2.png" alt="" height="100px" width="100px" style="object-fit: cover;">
+                                    <img src="images/mini-img-3.png" alt="" height="100px" width="100px" style="object-fit: cover;">
+                                    <img src="images/mini-img-4.png" alt="" height="100px" width="100px" style="object-fit: cover;">
+                                    <img src="images/mini-img-5.png" alt="" height="100px" width="100px" style="object-fit: cover;">
+                                    <img src="images/mini-img-6.png" alt="" height="100px" width="100px" style="object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line-3">
+            <div class="container">
+                <div class="last_line">
+                    <div class="1-part_last_line">
+                        <p class="last_p">
+                            &#169; copyright <a href="#" style="color: white; font-family: 'Montserrat-Light'; text-decoration: none;"> finance. </a> design by &#64;doandu with love
+                        </p>
+                    </div>
+                    <div class="2-part_last_line">
+                        <ul class="last_ul" style="padding-left: 0;">
+                            <li class="last_li">
+                                <a href="#" class="tags_a">about us </a>
+                            </li>
+                            <li class="last_li">
+                                <a href="#" class="tags_a">terms</a>
+                            </li>
+                            <li class="last_li">
+                                <a href="#" class="tags_a">services</a>
+                            </li>
+                            <li class="last_li">
+                                <a href="#" id="last" class="tags_a"> contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script>
+        $('.one-time').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            speed: 300,
+            slidesToShow: 1,
+
+        });
+    </script>
+
+
+    <script>
+        function open_menu() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function close_menu() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                mybutton.style.opacity = "100%";
+            } else {
+                mybutton.style.opacity = "0%";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        $('.card-service').slick({
+            dots: true,
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+
+            responsive: [{
+                    breakpoint: 980,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        $('.test-slider').slick({
+            dots: true,
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+
+            responsive: [{
+                    breakpoint: 980,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        $('.card2_container').slick({
+            dots: false,
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+
+            responsive: [{
+                    breakpoint: 980,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+</body>
+
+</html>
